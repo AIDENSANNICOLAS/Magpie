@@ -37,18 +37,18 @@ public class Magpie2
 		{
 			response = "Enter a character right now!!!!";
 		}
-
-		else if (statement.indexOf("dog") >= 0)
+//The role of this statement is to ask the user "Tell me more about your dog" when the user includes the word "dog"
+		 else if (statement.indexOf("dog") >= 0)
 		{
 			response = "Tell me more about your dog.";
 		}
-		else if (statement.indexOf("cat") >= 0)
+		 else if (statement.indexOf("cat") >= 0)
 
 		{
 			response = "Tell me more about your cat.";
 		}
 
-		else if (statement.indexOf("Mr. Smith") >= 0)
+		 else if (statement.indexOf("Mr. Smith") >= 0)
 		{
 			response = "He sounds like a good teacher.";
 		}

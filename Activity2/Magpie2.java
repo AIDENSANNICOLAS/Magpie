@@ -28,16 +28,26 @@ public class Magpie2
 	 *            the user statement
 	 * @return a response based on the rules given
 	 */
+
+
 	public String getResponse(String statement)
 	{
+
+
+
+
+
 		String response = statement;
 		int responseLength = response.length();
+		statement = statement.toLowerCase();
 
 		//When the user inputs 0 characters, the bot will respond with "Enter a character right now!!!!" This makes a more enjoyable experience to the user.
 		if (responseLength == 0)
 		{
 			response = "Enter a character right now!!!!";
 		}
+		//
+
 //The role of this statement is to ask the user "Tell me more about your pet" when the user includes the word "dog". This creates a better experience for the user.
 		 else if (statement.indexOf("dog") >= 0)
 		{

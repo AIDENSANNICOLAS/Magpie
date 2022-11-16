@@ -33,35 +33,43 @@ public class Magpie2
 		String response = statement;
 		int responseLength = response.length();
 
+		//When the user inputs 0 characters, the bot will respond with "Enter a character right now!!!!" This makes a more enjoyable experience to the user.
 		if (responseLength == 0)
 		{
 			response = "Enter a character right now!!!!";
 		}
-//The role of this statement is to ask the user "Tell me more about your dog" when the user includes the word "dog"
+//The role of this statement is to ask the user "Tell me more about your pet" when the user includes the word "dog". This creates a better experience for the user.
 		 else if (statement.indexOf("dog") >= 0)
 		{
-			response = "Tell me more about your dog.";
+			response = "Tell me more about your pet.";
 		}
+
+
+		//The role of this statement is to ask the user "Tell me more about your pet" when the user includes the word "cat". This creates a better experience for the user.
 		 else if (statement.indexOf("cat") >= 0)
 
 		{
-			response = "Tell me more about your cat.";
+			response = "Tell me more about your pet.";
 		}
 
+		 //The role of this statement is to tell the user "He sounds like a good teacher" when the user includes the statement "Mr. Smith". This creates a better experience for the user.
 		 else if (statement.indexOf("Mr. Smith") >= 0)
 		{
 			response = "He sounds like a good teacher.";
 		}
-
+////The role of this statement is to ask the user "I ain't helping you. Who do you think I am?" when the user includes the word "help". This creates a better experience for the user.
 		else if(statement.indexOf("help") >= 0)
 		{
 			response = "I ain't helping you. Who do you think I am?";
 		}
 
+		////The role of this statement is to tell the user "Hate is a strong word." when the user includes the word "hate". This creates a better experience for the user.
 		else if(statement.indexOf("hate") >= 0)
 		{
 			response = "Hate is a strong word";
 		}
+
+		//The role of this statement is to tell the user "I love you too" when the user includes the word "love". This creates a better experience for the user.
 		else if(statement.indexOf("love") >= 0)
 		{
 			response = "I love you too";
@@ -84,7 +92,7 @@ public class Magpie2
 		double r = Math.random();
 		int whichResponse = (int)(r * NUMBER_OF_RESPONSES);
 		String response = "";
-		
+
 		if (whichResponse == 0)
 		{
 			response = "Interesting, tell me more.";
@@ -101,6 +109,8 @@ public class Magpie2
 		{
 			response = "You don't say.";
 		}
+
+		//When the user inputs a keyword that isn't recognizable by the boy, it will display these following phrases.
 
 		else if (whichResponse == 4)
 		{

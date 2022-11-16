@@ -66,7 +66,7 @@ public class Magpie2
 		 //The role of this statement is to tell the user "He sounds like a good teacher" when the user includes the statement "Mr. Smith". This creates a better experience for the user.
 		 else if (statement.indexOf("mr.smith") >= 0)
 		{
-			response = "They sounds like a good teacher.";
+			response = "He sounds like a good teacher.";
 		}
 ////The role of this statement is to ask the user "I ain't helping you. Who do you think I am?" when the user includes the word "help". This creates a better experience for the user.
 		else if(statement.indexOf("help") >= 0)

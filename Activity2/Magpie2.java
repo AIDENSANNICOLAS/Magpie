@@ -39,7 +39,8 @@ public class Magpie2
 
 		String response = statement;
 		int responseLength = response.length();
-		statement = statement.toLowerCase();
+		statement = statement.replaceAll("\\s", "").toLowerCase();
+
 
 		//When the user inputs 0 characters, the bot will respond with "Enter a character right now!!!!" This makes a more enjoyable experience to the user.
 		if (responseLength == 0)
@@ -63,9 +64,9 @@ public class Magpie2
 		}
 
 		 //The role of this statement is to tell the user "He sounds like a good teacher" when the user includes the statement "Mr. Smith". This creates a better experience for the user.
-		 else if (statement.indexOf("Mr. Smith") >= 0)
+		 else if (statement.indexOf("mr.smith") >= 0)
 		{
-			response = "He sounds like a good teacher.";
+			response = "They sounds like a good teacher.";
 		}
 ////The role of this statement is to ask the user "I ain't helping you. Who do you think I am?" when the user includes the word "help". This creates a better experience for the user.
 		else if(statement.indexOf("help") >= 0)

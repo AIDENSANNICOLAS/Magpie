@@ -30,11 +30,8 @@ public class Magpie2
 	 */
 	public String getResponse(String statement)
 	{
-		//
 		String response = statement;
 		int responseLength = response.length();
-// if (statement.indexOf("dog") >= 0)
-
 
 		if (responseLength == 0)
 		{
@@ -50,6 +47,7 @@ public class Magpie2
 		{
 			response = "Tell me more about your cat.";
 		}
+
 		else if (statement.indexOf("Mr. Smith") >= 0)
 		{
 			response = "He sounds like a good teacher.";
@@ -69,7 +67,6 @@ public class Magpie2
 			response = "I love you too";
 		}
 
-
 		else
 		{
 			response = getRandomResponse();
@@ -83,7 +80,7 @@ public class Magpie2
 	 */
 	private String getRandomResponse()
 	{
-		final int NUMBER_OF_RESPONSES = 4;
+		final int NUMBER_OF_RESPONSES = 6;
 		double r = Math.random();
 		int whichResponse = (int)(r * NUMBER_OF_RESPONSES);
 		String response = "";
